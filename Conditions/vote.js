@@ -1,16 +1,12 @@
 const p =require("prompt-sync")()
 
-let number = p("Demande votre age :");
+let age = p("Demande votre age :");
 
-if(number > 0)
+if(age >= 18)
 {
-    console.log("Positif")
-}
-else if(number < 0)
-{
-    console.log("Negatif")
+    console.log("Elgibl deux au vote");
 }
 else
 {
-    console.log("Zero")
+    console.log("Non eligible");
 }
